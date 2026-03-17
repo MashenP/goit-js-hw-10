@@ -1,6 +1,10 @@
+@import url('./1-timer.css');
+@import url('./2-snackbar.css');
+
 body {
     margin: 0;
     background-color: #FFFFFF;
+    color: #2E2F42;
 }
 
 .header {
@@ -48,95 +52,3 @@ body {
     margin-left: 56px;
 }
 
-.gallery {
-    list-style: none;
-    padding: 24px 156px;
-    max-width: 1440px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 24px;
-    column-gap: 24px;
-}
-
-.gallery-item {
-    overflow: hidden;
-    transition: transform 0.25s ease;
-}
-
-.gallery-item:hover {
-    transform: scale(1.025);
-}
-
-.gallery-link {
-    text-decoration: none;
-}
-
-.gallery-image {
-    display: block;
-    object-fit: cover;
-    cursor: zoom-in;
-}
-
-.feedback-form {
-    position: relative;
-    width: 494px;
-    padding: 56px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.feedback-form label {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #2E2F42;
-}
-
-.feedback-form input,
-.feedback-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8px;
-    border: 1px solid #808080;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: 'Montserrat', sans-serif;
-    resize: none;
-}
-
-.feedback-form input:focus,
-.feedback-form textarea:focus {
-    outline: 2px solid #4E75FF;
-    border-color: #4E75FF;
-}
-
-.feedback-form button {
-    width: 95px;
-    height: 40px;
-    padding: 8px 16px;
-    background: #4E75FF;
-    border: none;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background 0.2s;
-}
-
-.feedback-form button:hover,
-.feedback-form button:active {
-    background: #6C8CFF;
-}
