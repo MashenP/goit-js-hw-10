@@ -11,11 +11,10 @@ const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
 const secondsEl = document.querySelector('[data-seconds]');
 
+startBtn.disabled = true;
+
 let userSelectedDate = null;
 let timerInterval = null;
-
-
-startBtn.disabled = true;
 
 function addLeadingZero(value) {
   return String(value).padStart(2, '0');
