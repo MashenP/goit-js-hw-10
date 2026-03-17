@@ -14,6 +14,9 @@ const secondsEl = document.querySelector('[data-seconds]');
 let userSelectedDate = null;
 let timerInterval = null;
 
+
+startBtn.disabled = true;
+
 function addLeadingZero(value) {
   return String(value).padStart(2, '0');
 }
@@ -64,8 +67,6 @@ flatpickr('#datetime-picker', options);
 
 startBtn.addEventListener('click', () => {
   if (!userSelectedDate) return;
-
-  startBtn.disabled = true;
   input.disabled = true;
 
   timerInterval = setInterval(() => {
