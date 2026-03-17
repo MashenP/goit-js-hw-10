@@ -67,6 +67,7 @@ flatpickr('#datetime-picker', options);
 
 startBtn.addEventListener('click', () => {
   if (!userSelectedDate) return;
+  startBtn.disabled = true;
   input.disabled = true;
 
   timerInterval = setInterval(() => {
